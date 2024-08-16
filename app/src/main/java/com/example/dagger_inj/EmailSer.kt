@@ -9,12 +9,12 @@ interface Notificationser{
 
 class EmailSer @Inject constructor():Notificationser{
     override fun send(to:String, from:String, body:String?){
-        Log.d(TAG,"Email sent")
+        Log.d("TAG","Email sent")
     }
 }
 class MessageSer:Notificationser{
     override fun send(to: String, from: String, body: String?) {
-        Log.d(TAG,"Msg sent")
+        Log.d("TAG","Msg sent")
     }
 
 }
